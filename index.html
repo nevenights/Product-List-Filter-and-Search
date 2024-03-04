@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+
+    </div>
+    <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" spellcheck="false" placeholder="Search product by name..."/>
+            <button id="search">Search</button>
+        </div>
+        <div class="buttons">
+            <button class="button-value" onclick="filterProduct('all')">All</button>
+            <button class="button-value" onclick="filterProduct('Green')">Green Tea</button>
+            <button class="button-value" onclick="filterProduct('Black')">Black Tea</button>
+            <button class="button-value" onclick="filterProduct('White')">White Tea</button>
+            <button class="button-value" onclick="filterProduct('Oolong')">Oolong Tea</button>
+            <button class="button-value" onclick="filterProduct('Herbal')">Herbal Tea</button>        
+        </div>
+        <div class="products" id="products"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
